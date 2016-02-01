@@ -22,8 +22,8 @@ Maintainer:
 ## Quick Links
 
 - [Readme](../readme.md)
-- [1. Feature Branches](/1-feature-branches.md)
-- [2. Code Review](/2-code-review.md)
-- [3. Hotfix](/3-hotfix.md)
-- [5. Release Bugs](/5-release-bugs.md)
-- [6. Completed Release](/6-completed-release.md)
+- [1. Feature Branches](1-feature-branches.md)
+- [2. Code Review](2-code-review.md)
+- [3. Hotfix](3-hotfix.md)
+- [5. Release Bugs](5-release-bugs.md)
+- [6. Completed Release](6-completed-release.md)

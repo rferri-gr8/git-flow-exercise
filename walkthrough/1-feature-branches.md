@@ -36,8 +36,8 @@ Team Members:
 ## Quick Links
 
 - [Readme](../readme.md)
-- [2. Code Review](/2-code-review.md)
-- [3. Hotfix](/3-hotfix.md)
-- [4. Release Branch](/4-release-branch.md)
-- [5. Release Bugs](/5-release-bugs.md)
-- [6. Completed Release](/6-completed-release.md)
+- [2. Code Review](2-code-review.md)
+- [3. Hotfix](3-hotfix.md)
+- [4. Release Branch](4-release-branch.md)
+- [5. Release Bugs](5-release-bugs.md)
+- [6. Completed Release](6-completed-release.md)
