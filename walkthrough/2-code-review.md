@@ -21,7 +21,7 @@ Maintainers:
 
 ## Next
 
-[3. Hotfix](/3-hotfix.md)
+[3. Hotfix](3-hotfix.md)
 
 ## Quick Links
 

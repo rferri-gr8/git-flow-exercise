@@ -17,7 +17,7 @@ Maintainer:
 
 ## Next
 
-[5. Release Bugs](/5-release-bugs.md)
+[5. Release Bugs](5-release-bugs.md)
 
 ## Quick Links
 

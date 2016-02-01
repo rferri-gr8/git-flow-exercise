@@ -33,7 +33,7 @@ Maintainers:
 
 ## Next
 
-[4. Release Branch](/4-release-branch.md)
+[4. Release Branch](4-release-branch.md)
 
 ## Quick Links
 

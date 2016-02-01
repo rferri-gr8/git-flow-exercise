@@ -31,7 +31,7 @@ Team Members:
 
 ## Next
 
-[2. Code Review](/2-code-review.md)
+[2. Code Review](2-code-review.md)
 
 ## Quick Links
 

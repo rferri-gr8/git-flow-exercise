@@ -33,7 +33,7 @@ Maintainers:
 
 ## Next
 
-[6. Completed Release](/6-completed-release.md)
+[6. Completed Release](6-completed-release.md)
 
 ## Quick Links
 
