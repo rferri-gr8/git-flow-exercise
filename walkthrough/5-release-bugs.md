@@ -17,7 +17,7 @@ Developer 1:
 1. Create a feature branch off of `release-1.1`.
 2. Commit the following changes to the feature branch:
     1. Create a section in [`/app/index.md`](/app/index.md) titled "Last Month's Favorites"
-    2. Copy the table that was published last release and paste under "Last Month's Favorites". Be sure not to include John Lemon.
+    2. Copy the text that was published last release and paste under "Last Month's Favorites". Be sure not to include John Lemon.
 3. Push the feature branch to your GitHub fork.
 4. Open up a Pull Request against the `release-1.1` branch in the source repository.
 
