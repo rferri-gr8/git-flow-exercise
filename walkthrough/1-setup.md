@@ -196,6 +196,8 @@ $ git branch -vv
 * master  3e03a92 [origin/master] Create example app
 ```
 
+You should now be ready to move on to the rest of the walkthrough. If you'd like to see the repository you've created on your local machine in GitHub desktop, you can add a repository by choosing a local path.
+
 ---
 
 :cop: :raised_hand: - Please wait until everyone has caught up.
@@ -203,8 +205,6 @@ $ git branch -vv
 :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction:
 
 ---
-
-You should now be ready to move on to the rest of the walkthrough. If you'd like to see the repository you've created on your local machine in GitHub desktop, you can add a repository by choosing a local path.
 
 ## Next
 
