@@ -17,6 +17,7 @@ __All Team Members__
 Navigate to the source repository on GitHub, click the "Pull Requests" tab, and click on the Pull Request opened by the team member sitting to your right.
 
 Review the following things:
+
 1. Verify that the user is requesting to merge their feature branch into the `develop` branch.
 2. Check to see if there is any important information on the Conversation tab.
 3. Check the Commits tab to get a high-level view of the individual changes that were made.
