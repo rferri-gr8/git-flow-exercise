@@ -76,6 +76,20 @@ Switched to a new branch 'teammate-feature-branch'
 
 Now you've switched the code in your directory to a branch containing all of the changes committed to your teammate's branch. If you have your project open in sublime or another text editor you will notice that the source files contain your teammate's changes.
 
+If you run the `git log` command you can see a log of the latest commits made to the current branch:
+```sh
+$ git log
+commit 6b7a7c2bc46753d0d394758b8fd04bcd3b4cf896
+Author: My Teammate <teammate@gr8people.com>
+Date:   Mon Feb 8 12:58:20 2016 -0500
+
+    Adding Eggs Benny February Recipe
+
+...
+```
+
+:bulb: Press enter to scroll through lines <kbd>&amp;</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd> to exit the log.
+
 Once you are done, you can delete this branch:
 ```sh
 $ git checkout develop
