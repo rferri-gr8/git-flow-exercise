@@ -191,7 +191,7 @@ $ git remote show origin
 
 :bulb: The `-vv` flag for the `git branch` command will also show the remote branches that are tracked by your local branches (in brackets):
 ```sh
-$ git branch --vv
+$ git branch -vv
   develop 3e03a92 [origin/develop] Create example app
 * master  3e03a92 [origin/master] Create example app
 ```
