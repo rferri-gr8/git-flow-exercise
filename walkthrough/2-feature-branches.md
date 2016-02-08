@@ -64,7 +64,7 @@ Switched to a new branch 'cuba-pudding-jr-feb'
 
 ### 2 - Make Changes to the Project
 
-__All Team Members___
+__All Team Members__
 
 In your text editor, make the following changes:
 1. Add the new recipe under the [`/app/recipe/feb/`](/app/recipe/feb/) directory.
