@@ -35,6 +35,8 @@ $ git branch
 * master
 ```
 
+:bulb: Feature branches will be named such that someone else can look at what branches are in progress and get a rough idea of what work is being done on each branch.
+
 Next, switch to the newly created feature branch:
 ```sh
 $ git checkout cuba-pudding-jr-feb
