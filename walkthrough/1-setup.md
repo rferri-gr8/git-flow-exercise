@@ -167,19 +167,19 @@ __All Team Members__
 
 By now you should have noticed that you do not have a local `develop` branch
 ```sh
-git branch
+$ git branch
 * master
 ```
 
 Create a `develop` branch that tracks from your GitHub fork's `develop` branch:
 ```sh
-git branch develop origin/develop
+$ git branch develop origin/develop
 Branch develop set up to track remote branch develop from origin
 ```
 
 Notice that viewing the details for the `origin` remote indicates that the local `develop` and `master` branches are configured to push to and pull from your GitHub fork's branches:
 ```sh
-git remote show origin
+$ git remote show origin
 ...
    Local branches configured for 'git pull':
      develop merges with remote develop
@@ -191,7 +191,7 @@ git remote show origin
 
 :bulb: The `-vv` flag for the `git branch` command will also show the remote branches that are tracked by your local branches (in brackets):
 ```sh
-git branch --vv
+$ git branch --vv
   develop 3e03a92 [origin/develop] Create example app
 * master  3e03a92 [origin/master] Create example app
 ```
