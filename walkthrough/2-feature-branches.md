@@ -83,7 +83,7 @@ Since other people are going to be making changes at the same time, be careful n
 
 ### 3 - Diff Changes
 
-__All Team Members___
+__All Team Members__
 
 If you view the current git status, you will see 2 files with unstaged changes and a new folder that has not been tracked by git:
 ```sh
