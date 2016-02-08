@@ -33,13 +33,14 @@ Maintainers:
 
 ## Next
 
-[6. Completed Release](6-completed-release.md)
+[7. Completed Release](7-completed-release.md)
 
 ## Quick Links
 
 - [Readme](../readme.md)
-- [1. Feature Branches](1-feature-branches.md)
-- [2. Code Review](2-code-review.md)
-- [3. Hotfix](3-hotfix.md)
-- [4. Release Branch](4-release-branch.md)
-- [6. Completed Release](6-completed-release.md)
+- [1. Setup](1-setup.md)
+- [2. Feature Branches](2-feature-branches.md)
+- [3. Code Review](3-code-review.md)
+- [4. Hotfix](4-hotfix.md)
+- [5. Release Branch](5-release-branch.md)
+- [7. Completed Release](7-completed-release.md)
