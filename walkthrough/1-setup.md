@@ -30,7 +30,7 @@ __All Team Members__
 Clone your fork to your local machine:
 ```sh
 $ cd ~/my/parent/directory
-$ git clone https://github.com/username/repository-name.git
+$ git clone https://github.com/your-username/repository-name.git
 # clone the fork repository from GitHub
 
 $ cd repository-name
@@ -43,16 +43,16 @@ $ git remote
 origin
 
 $ git remote -v
-origin https://github.com/username/repository-name.git (fetch)
-origin https://github.com/username/repository-name.git (push)
+origin https://github.com/your-username/repository-name.git (fetch)
+origin https://github.com/your-username/repository-name.git (push)
 ```
 
 You should see an `origin` remote that points to your GitHub fork:
 ```sh
 $ git remote show origin
 * remote origin
-  Fetch URL: https://github.com/username/repository-name.git
-  Push  URL: https://github.com/username/repository-name.git
+  Fetch URL: https://github.com/your-username/repository-name.git
+  Push  URL: https://github.com/your-username/repository-name.git
   HEAD branch: master
   Remote branches:
     develop tracked
@@ -101,8 +101,8 @@ $ git remote add source https://github.com/source-username/repository-name.git
 # add the source remote
 
 $ git remote -v
-origin https://github.com/username/repository-name.git (fetch)
-origin https://github.com/username/repository-name.git (push)
+origin https://github.com/your-username/repository-name.git (fetch)
+origin https://github.com/your-username/repository-name.git (push)
 source https://github.com/source-username/repository-name.git (fetch)
 source https://github.com/source-username/repository-name.git (push)
 ```

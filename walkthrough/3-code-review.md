@@ -46,8 +46,8 @@ $ git remote add teammate https://github.com/teammmate-username/repository-name.
 # add the teammate remote
 
 $ git remote -v
-origin https://github.com/username/repository-name.git (fetch)
-origin https://github.com/username/repository-name.git (push)
+origin https://github.com/your-username/repository-name.git (fetch)
+origin https://github.com/your-username/repository-name.git (push)
 source https://github.com/source-username/repository-name.git (fetch)
 source https://github.com/source-username/repository-name.git (push)
 teammate https://github.com/teammate-username/repository-name.git (fetch)
