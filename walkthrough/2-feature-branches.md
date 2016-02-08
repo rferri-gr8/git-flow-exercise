@@ -82,7 +82,7 @@ Since other people are going to be making changes at the same time, be careful n
 
 ---
 
-### 3 - Diff Changes
+### 3 - Review Changes
 
 __All Team Members__
 
@@ -117,7 +117,7 @@ index ac3abad..9777cd5 100644
  ### [Cuba Pudding Jr.](writer/cuba-pudding-jr.md) | cubapud@flavor.magazine
 
 -[Grilled Peach Salad](recipe/jan/grilled-peach-salad.md)
-+[Quick Oatmeal Pancakes](		recipe/feb/quick-oatmeal-pancakes.md)
++[Quick Oatmeal Pancakes](recipe/feb/quick-oatmeal-pancakes.md)
 
  ### [Eggs Benny](writer/eggs-benny.md) | englishmuffin@flavor.magazine
 
