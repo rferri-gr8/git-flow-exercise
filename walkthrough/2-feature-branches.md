@@ -69,7 +69,7 @@ __All Team Members__
 In your text editor, make the following changes:
 
 1. Add the new recipe under the [`/app/recipe/feb/`](/app/recipe/feb/) directory.
-2. Update the writer's page in the [`/app/writer/`](/app/writer/) direcotry.
+2. Update the writer's page in the [`/app/writer/`](/app/writer/) directory.
 3. Update the main mage [`/app/index.md`](/app/index.md).
 
 Since other people are going to be making changes at the same time, be careful not to make changes to lines of code that are not relevant to your change.
