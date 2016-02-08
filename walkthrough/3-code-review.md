@@ -43,7 +43,7 @@ If you are curious to run someone else's code locally, you will need to set up a
 
 Create a remote pointing to the person to your right's Fork:
 ```sh
-$ git remote add teammate https://github.com/teammmate-username/repository-name.git
+$ git remote add teammate https://github.com/teammate-username/repository-name.git
 # add the teammate remote
 
 $ git remote -v
