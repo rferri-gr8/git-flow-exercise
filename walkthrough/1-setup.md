@@ -15,14 +15,17 @@ Fork the source repository:
    1. Visit https://github.com/source-username/repository-name.
    2. Click the "fork" button, and choose your personal GitHub account if prompted.
 
+---
+
+:cop: :raised_hand: - Please wait until everyone has caught up.
+
+:construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction: :construction:
+
+---
 
 ### 2 - Clone your Fork
 
 __All Team Members__
-
-Fork the source repository:
-   1. Visit https://github.com/source-username/repository-name.
-   2. Click the "fork" button, and choose your personal GitHub account if prompted.
 
 Clone your fork to your local machine:
 ```sh
