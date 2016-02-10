@@ -1,4 +1,4 @@
-# 1. Feature Branches
+# 2. Feature Branches
 
 | Date | Phase |
 | --- | --- |
@@ -224,7 +224,8 @@ Next we will walk through the process of reviewing a Pull Request, viewing someo
 - [Readme](../readme.md)
 - [1. Setup](1-setup.md)
 - [3. Code Review](3-code-review.md)
-- [4. Hotfix](4-hotfix.md)
-- [5. Release Branch](5-release-branch.md)
-- [6. Release Bugs](6-release-bugs.md)
-- [7. Completed Release](7-completed-release.md)
+- [4. Fetching Latest](4-fetching-latest.md)
+- [5. Hotfix](5-hotfix.md)
+- [6. Release Branch](6-release-branch.md)
+- [7. Release Bugs](7-release-bugs.md)
+- [8. Completed Release](8-completed-release.md)
