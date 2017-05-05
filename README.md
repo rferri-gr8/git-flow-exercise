@@ -29,7 +29,7 @@ Please leave this repository open in a browser tab so that you can follow along 
 
 ## Next
 
-Next we will walk through the process of creating a Fork repository and setting up a local clone.
+Next we will walk through the process of creating a GitHub Fork and local clone of this repository.
 
 [Go](/walkthrough/1-setup.md)
 

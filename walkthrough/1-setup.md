@@ -1,6 +1,6 @@
 # 1. Setup
 
-In order to contribute to a GitHub project, you will need two things: a Fork of the project and a local clone of your Fork.
+In order to contribute to a GitHub project, you will need two things: a GitHub Fork and a local clone of this project.
 
 ## :running: Activities
 
@@ -27,10 +27,10 @@ Fork the source repository:
 
 __All Team Members__
 
-Clone your fork to your local machine:
+Clone this project to your local machine:
 ```sh
 $ cd ~/my/parent/directory
-$ git clone https://github.com/your-username/repository-name.git
+$ git clone https://github.com/source-username/repository-name.git
 # clone the fork repository from GitHub
 
 $ cd repository-name
@@ -43,16 +43,16 @@ $ git remote
 origin
 
 $ git remote -v
-origin https://github.com/your-username/repository-name.git (fetch)
-origin https://github.com/your-username/repository-name.git (push)
+origin https://github.com/source-username/repository-name.git (fetch)
+origin https://github.com/source-username/repository-name.git (push)
 ```
 
-You should see an `origin` remote that points to your GitHub fork:
+You should see an `origin` remote that points to the source GitHub project:
 ```sh
 $ git remote show origin
 * remote origin
-  Fetch URL: https://github.com/your-username/repository-name.git
-  Push  URL: https://github.com/your-username/repository-name.git
+  Fetch URL: https://github.com/source-username/repository-name.git
+  Push  URL: https://github.com/source-username/repository-name.git
   HEAD branch: master
   Remote branches:
     develop tracked
@@ -91,66 +91,54 @@ $ git branch -a
 
 ---
 
-### 3 - Add Remote for Source Repository
+### 3 - Add Remote for your GitHub Fork
 
 __All Team Members__
 
-Add a `source` remote:
+Add a `me` remote:
 ```sh
-$ git remote add source https://github.com/source-username/repository-name.git
-# add the source remote
+$ git remote add me https://github.com/your-username/repository-name.git
+# add the me remote
 
 $ git remote -v
-origin https://github.com/your-username/repository-name.git (fetch)
-origin https://github.com/your-username/repository-name.git (push)
-source https://github.com/source-username/repository-name.git (fetch)
-source https://github.com/source-username/repository-name.git (push)
+origin https://github.com/source-username/repository-name.git (fetch)
+origin https://github.com/source-username/repository-name.git (push)
+me https://github.com/your-username/repository-name.git (fetch)
+me https://github.com/your-username/repository-name.git (push)
 ```
 
-You should see a `source` remote that points to the upstream GitHub source repository:
+You should see a `me` remote that points to your GitHub Fork repository:
 ```sh
-$ git remote show source
-* remote origin
-  Fetch URL: https://github.com/source-username/repository-name.git
-  Push  URL: https://github.com/source-username/repository-name.git
+$ git remote show me
+* remote me
+  Fetch URL: https://github.com/your-username/repository-name.git
+  Push  URL: https://github.com/your-username/repository-name.git
   HEAD branch: master
   Remote branches:
-    develop new (next fetch will store in remotes/source)
-    master  new (next fetch will store in remotes/source)
+    develop new (next fetch will store in remotes/me)
+    master  new (next fetch will store in remotes/me)
   Local ref configured for 'git push':
     master  pushes to master (up to date)
 ```
 
 Maintainers will need to create branches and push directly to the source repository.
 
-All team members will need to pull changes from the source repository and merge them into
-their own branches.
+All team members will need to pull changes from the source repository in order to branch from for feature branches.
 
-Fetch branch data from the `source` remote:
+Fetch branch data from the `origin` remote:
 ```sh
-$ git fetch source
+$ git fetch origin
 From https://github.com/source-username/repository-name
-* [new branch]      develop    -> source/develop
-* [new branch]      master     -> source/master
+* [new branch]      develop    -> origin/develop
+* [new branch]      master     -> origin/master
 
 $ git branch -a
 * master
   remotes/origin/HEAD -> origin/master
   remotes/origin/develop
   remotes/origin/master
-  remotes/source/develop
-  remotes/source/master
-
-$ git remote show source
-* remote source
-  Fetch URL: https://github.com/source-username/repository-name.git
-  Push  URL: https://github.com/source-username/repository-name.git
-  HEAD branch: master
-  Remote branches:
-    develop tracked
-    master tracked
-  Local ref configured for 'git push':
-     master pushes to master (up to date)
+  remotes/me/develop
+  remotes/me/master
 ```
 
 ---
@@ -171,13 +159,13 @@ $ git branch
 * master
 ```
 
-Create a `develop` branch that tracks from your GitHub fork's `develop` branch:
+Create a `develop` branch that tracks from `origin`'s `develop` branch:
 ```sh
-$ git branch develop origin/develop
+$ git checkout -b develop --track origin/develop
 Branch develop set up to track remote branch develop from origin
 ```
 
-Notice that viewing the details for the `origin` remote indicates that the local `develop` and `master` branches are configured to push to and pull from your GitHub fork's branches:
+Notice that viewing the details for the `origin` remote indicates that the local `develop` and `master` branches are configured to push to and pull from the source GitHub repository's branches:
 ```sh
 $ git remote show origin
 ...
@@ -192,8 +180,8 @@ $ git remote show origin
 :bulb: The `-vv` flag for the `git branch` command will also show the remote branches that are tracked by your local branches (in brackets):
 ```sh
 $ git branch -vv
-  develop 3e03a92 [origin/develop] Create example app
-* master  3e03a92 [origin/master] Create example app
+* develop 3e03a92 [origin/develop] Create example app
+  master  3e03a92 [origin/master] Create example app
 ```
 
 You should now be ready to move on to the rest of the walkthrough. If you'd like to see the repository you've created on your local machine in GitHub desktop, you can add a repository by choosing a local path.

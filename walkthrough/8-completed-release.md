@@ -12,7 +12,21 @@ It is the last day of the month and no more requests have come in from the, time
 
 __Maintainers__
 
-Choose a maintainer to accept & merge the request to merge `release-1.1` into `master`.
+Choose a maintainer to merge `release-1.1` into `master`.
+
+```sh
+$ git checkout release-1.1
+
+$ git pull
+
+$ git checkout master
+
+$ git pull
+
+$ git merge --no-ff release-1.1
+
+$ git push
+```
 
 ---
 
@@ -29,20 +43,12 @@ __Maintainers__
 Next we will work to get changes made to the release merged back down into `develop`, so switch to the release branch and pull down all the latest changes:
 ```sh
 $ git checkout release-1.1
-# switch to release branch
 
-$ git pull
-# pull latest changes
-```
-
-:bulb: Running git pull on a tracking branch will automatically fetch and merge changes.
-
-Merge the release into develop, creating a new merge commit (via `--no-ff`):
-```sh
 $ git checkout develop
-# switch to develop
 
-$ git merge release-1.1 --no-ff -m "Merging 1.1"
+$ git merge --no-ff release-1.1
+
+$ git push
 ```
 
 :bulb: Always make sure that `develop` is up to date before merging. There may be some merge conflicts that will need to be addressed at this point.

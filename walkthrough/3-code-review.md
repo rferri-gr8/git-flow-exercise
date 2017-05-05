@@ -47,10 +47,10 @@ $ git remote add teammate https://github.com/teammate-username/repository-name.g
 # add the teammate remote
 
 $ git remote -v
-origin https://github.com/your-username/repository-name.git (fetch)
-origin https://github.com/your-username/repository-name.git (push)
-source https://github.com/source-username/repository-name.git (fetch)
-source https://github.com/source-username/repository-name.git (push)
+me https://github.com/your-username/repository-name.git (fetch)
+me https://github.com/your-username/repository-name.git (push)
+origin https://github.com/source-username/repository-name.git (fetch)
+origin https://github.com/source-username/repository-name.git (push)
 teammate https://github.com/teammate-username/repository-name.git (fetch)
 teammate https://github.com/teammate-username/repository-name.git (push)
 ```
@@ -69,10 +69,14 @@ $ git branch -r --list teammate/*
 
 Checkout a tracking branch:
 ```sh
-$ git checkout -b teammate-feature-branch teammate/eggs-benny-feb
+$ git checkout eggs-benny-feb
 Branch teammate-feature-branch set up to track remote branch eggs-benny-feb from teammate.
 Switched to a new branch 'teammate-feature-branch'
 ```
+
+:bulb: As long as only one of your remotes has a branch called eggs-benny-feb, it knows to create a local tracking branch.
+
+:bulb: If you do not wish to create a tracking branch, you can check out the branch in read-only mode by fully-specifying the branch instead (e.g., `teammate/eggs-benny-feb`)
 
 Now you've switched the code in your directory to a branch containing all of the changes committed to your teammate's branch. If you have your project open in sublime or another text editor you will notice that the source files contain your teammate's changes.
 

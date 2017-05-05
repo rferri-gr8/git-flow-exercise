@@ -54,10 +54,8 @@ __Maintainers__
 Choose a maintainer to publish the hotfix branch. This maintainer should push the branch to source:
 
 ```sh
-$ git push source hotfix-1.0.1
+$ git push -u origin HEAD
 ```
-
-At this time create a pull request to merge the hotfix branch into `master`, but do not yet merge.
 
 ---
 
@@ -114,7 +112,7 @@ Choose a developer to publish the fixup branch and create a Pull Request against
 
 Publish the branch:
 ```sh
-$ git push origin remove-emails
+$ git push -u me HEAD
 ```
 
 Navigate to your GitHub fork and open the pull request, making sure to request to merge changes into the `hotfix-1.0.1` branch.
@@ -157,16 +155,17 @@ $ git pull
 Merge hotfix into develop, creating a new merge commit (via `--no-ff`):
 ```sh
 $ git checkout develop
-# switch to develop
 
-$ git merge hotfix-1.0.1 --no-ff -m "Merging 1.0.1"
+$ git pull
+
+$ git merge --no-ff hotfix-1.0.1
 ```
 
 :bulb: Always make sure that `develop` is up to date before merging. There may be some merge conflicts that will need to be addressed at this point.
 
-Choose a maintainer to push the the commit up to the source repository:
+Push the commit up to the source repository:
 ```sh
-$ git push source develop
+$ git push
 ```
 
 ## Next

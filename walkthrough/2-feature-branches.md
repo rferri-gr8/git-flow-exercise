@@ -27,12 +27,12 @@ Create a feature branch off of the `develop` branch that contains the writer's n
 ```sh
 $ git checkout develop
 
-$ git branch cuba-pudding-jr-feb
+$ git checkout -b cuba-pudding-jr-feb
 
 $ git branch
-  cuba-pudding-jr-feb
+* cuba-pudding-jr-feb
   develop
-* master
+  master
 ```
 
 :bulb: Feature branches will be named such that someone else can look at what branches are in progress and get a rough idea of what work is being done on each branch.
@@ -48,10 +48,9 @@ $ git branch
   master
 ```
 
-:bulb: You can simplify the last two steps to create and switch to a branch with a single command:
+:bulb: You can create a branch without immediately checking out the branch via the `git branch` command:
 ```sh
-$ git checkout -b cuba-pudding-jr-feb
-Switched to a new branch 'cuba-pudding-jr-feb'
+$ git branch cuba-pudding-jr-feb
 ```
 
 ---
@@ -150,9 +149,8 @@ If you see that you have changes to unexpected lines, please correct them at thi
 
 Stage all of the changes that you've made thus far:
 ```sh
-$ git add -A
-# Careful, -A stages changes to all tracked files, untracks files that have been
-# removed, and tracks files that have been added.
+$ git add app/*
+# Careful, using a wildcard adds any file that has changed that matches the pattern.
 
 $ git status
 On branch cuba-pudding-jr-feb
@@ -185,10 +183,13 @@ $ git commit -m "Adding Cuba Pudding Jr.'s Feb Recipe"
 
 Now that your changes have been committed, let's get them published to your Fork on GitHub:
 ```sh
-$ git push origin cuba-pudding-jr-feb
+$ git push -u me HEAD
 ```
 
-:bulb: Make sure you type the correct branch name.
+:bulb: Specifying the HEAD reference instructs git to push to the same branch as the HEAD of your local project, which is currently your feature branch.
+
+:bulb: The `-u` flag instructs git to link your local branch with the remote's branch so that future push & pull commands do not require you
+to specify where you would like to push or pull code from.
 
 Navigate to your Fork on Github, you should now see your new branch in the interface.
 

@@ -8,31 +8,17 @@ Now that mods have been merged into the development branch, it is prudent to get
 
 ## :running: Activities
 
-Follow along with the activities below to walk through the process of fetching the latest commits to the `source/develop` branch, merging them into your local `develop` branch, and publishing them back out to your GitHub fork.
+Follow along with the activities below to walk through the process of pulling the latest commits to the `origin/develop` branch into your local tracking branch.
 
-### 1 - Fetch Latest from Source
+### 1 - Pull Latest from `develop`
 
 __All Team Members__
 
-Fetch the latest commits from the source repository:
-```sh
-$ git fetch source
-```
-
-Merge the new commits contained in the `source/develop` branch into your `develop` branch:
+Pull the latest commits to the `develop` branch from the source repository:
 ```sh
 $ git checkout develop
-# switch to develop branch
 
-$ git merge source/develop
-# merge commits from source/develop into your current branch (develop)
-```
-
-Your local `develop` branch is now up to date with the source `develop` branch.
-
-Now, publish your develop branch out to your GitHub fork:
-```sh
-$ git push origin develop
+$ git pull
 ```
 
 ## Next

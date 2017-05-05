@@ -14,11 +14,9 @@ __Maintainers__
 
 Bring your local develop branch up to date with the source repository:
 ```sh
-$ git fetch source
-
 $ git checkout develop
 
-$ git merge source/develop
+$ git pull
 ```
 
 Create a new branch off of `develop` named `release-1.1`:
@@ -46,16 +44,8 @@ __Maintainers__
 
 Choose a maintainer to publish the release branch to the source repository:
 ```sh
-$ git push source release-1.1
+$ git push -u origin HEAD
 ```
-
-### 3 - Open Pull Request
-
-__Maintainers__
-
-Choose a maintainer to open a pull request to merge the release branch into the `master` branch. __Do not merge the pull request at this time__. 
-
-This pull request is a good place to document all of the changes that comprise the release, perform a final review of the code that will be pushed, and comment on any issues related to the release. 
 
 ## Next
 

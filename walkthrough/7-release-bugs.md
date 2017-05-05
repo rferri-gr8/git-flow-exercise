@@ -14,15 +14,15 @@ Follow along with the activities below to walk through the process of fixing iss
 
 __Developers__
 
-Fetch the latest from source and create a local tracking branch for the release:
+Fetch the latest from origin and create a local tracking branch for the release:
 
 ```sh
-$ git fetch source
-# fetch latest from source
+$ git fetch origin
+# fetch latest from origin
 
 $ git checkout release-1.1
 # checkout the release branch
-Branch hotfix-1.1 set up to track remote branch release-1.1 from source.
+Branch hotfix-1.1 set up to track remote branch release-1.1 from origin.
 Switched to a new branch 'hotfix-1.0.1'
 ```
 
@@ -56,7 +56,7 @@ __Developers__
 
 The two developers from the last step should now publish their feature branches to GitHub and open up Pull Requests against the `release-1.1` branch in the source repository:
 ```sh
-$ git push origin FEATURE-BRANCH-NAME
+$ git push -u me HEAD
 ```
 
 ---
