@@ -37,17 +37,6 @@ $ git branch
 
 :bulb: Feature branches will be named such that someone else can look at what branches are in progress and get a rough idea of what work is being done on each branch.
 
-Next, switch to the newly created feature branch:
-```sh
-$ git checkout cuba-pudding-jr-feb
-Switched to branch 'cuba-pudding-jr-feb'
-
-$ git branch
-* cuba-pudding-jr-feb
-  develop
-  master
-```
-
 :bulb: You can create a branch without immediately checking out the branch via the `git branch` command:
 ```sh
 $ git branch cuba-pudding-jr-feb
