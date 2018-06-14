@@ -51,7 +51,7 @@ $ git commit -m "Bump version to 1.0.1"
 
 __Maintainers__
 
-Choose a maintainer to publish the hotfix branch. This maintainer should push the branch to source:
+Choose a maintainer to publish the hotfix branch. This maintainer should push the branch to origin:
 
 ```sh
 $ git push -u origin HEAD
@@ -69,15 +69,15 @@ $ git push -u origin HEAD
 
 __Developers__
 
-Fetch the latest from source and create a local tracking branch for the hotfix:
+Fetch the latest from origin and create a local tracking branch for the hotfix:
 
 ```sh
-$ git fetch source
-# fetch latest from source
+$ git fetch origin
+# fetch latest from origin
 
 $ git checkout hotfix-1.0.1
 # checkout the hotfix branch
-Branch hotfix-1.0.1 set up to track remote branch hotfix-1.0.1 from source.
+Branch hotfix-1.0.1 set up to track remote branch hotfix-1.0.1 from origin.
 Switched to a new branch 'hotfix-1.0.1'
 ```
 
@@ -163,7 +163,7 @@ $ git merge --no-ff hotfix-1.0.1
 
 :bulb: Always make sure that `develop` is up to date before merging. There may be some merge conflicts that will need to be addressed at this point.
 
-Push the commit up to the source repository:
+Push the commit up to the origin repository:
 ```sh
 $ git push
 ```
